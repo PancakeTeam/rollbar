@@ -1,9 +1,9 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace Archon.Rollbar
+namespace PancakeTeam.Rollbar
 {
-	abstract class JsonConverter<T> : JsonConverter
+    internal abstract class JsonConverter<T> : JsonConverter
 	{
 		public sealed override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
 		{

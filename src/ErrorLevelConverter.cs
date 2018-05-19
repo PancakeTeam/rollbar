@@ -1,9 +1,9 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace Archon.Rollbar
+namespace PancakeTeam.Rollbar
 {
-	class ErrorLevelConverter : JsonConverter<ErrorLevel>
+    internal class ErrorLevelConverter : JsonConverter<ErrorLevel>
 	{
 		public override void WriteJson(JsonWriter writer, ErrorLevel value, JsonSerializer serializer)
 		{

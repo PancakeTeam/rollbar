@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Archon.Rollbar
+namespace PancakeTeam.Rollbar
 {
 	[JsonConverter(typeof(ArbitraryKeyConverter))]
 	public class Server : HasArbitraryKeys

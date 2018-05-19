@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Archon.Rollbar
+namespace PancakeTeam.Rollbar
 {
 	[JsonConverter(typeof(ArbitraryKeyConverter))]
-	class Client : HasArbitraryKeys
+	internal class Client : HasArbitraryKeys
 	{
 		public JavascriptClient Javascript { get; set; }
 

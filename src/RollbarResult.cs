@@ -1,6 +1,6 @@
-namespace Archon.Rollbar
+namespace PancakeTeam.Rollbar
 {
-	class RollbarResult
+    internal class RollbarResult
 	{
 		public int? Id { get; set; }
 

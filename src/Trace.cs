@@ -3,9 +3,9 @@ using System.Diagnostics;
 using System.Linq;
 using Newtonsoft.Json;
 
-namespace Archon.Rollbar
+namespace PancakeTeam.Rollbar
 {
-	class Trace
+    internal class Trace
 	{
 		public Trace(Frame[] frames, Exception exception)
 		{

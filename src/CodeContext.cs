@@ -1,8 +1,8 @@
 ﻿using Newtonsoft.Json;
 
-namespace Archon.Rollbar
+namespace PancakeTeam.Rollbar
 {
-	class CodeContext
+    internal class CodeContext
 	{
 		[JsonProperty("pre", DefaultValueHandling = DefaultValueHandling.Ignore)]
 		public string[] Pre { get; set; }

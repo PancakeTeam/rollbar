@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Archon.Rollbar
+namespace PancakeTeam.Rollbar
 {
-	class Data
+    internal class Data
 	{
 		private static readonly string NotifierAssemblyVersion = typeof(Data).Assembly.GetName().Version.ToString(3);
 
@@ -62,7 +62,7 @@ namespace Archon.Rollbar
 		public Request Request { get; set; }
 
 		[JsonProperty("person", DefaultValueHandling = DefaultValueHandling.Ignore)]
-		public Person Person { get; set; }
+		public Person? Person { get; set; }
 
 		[JsonProperty("server", DefaultValueHandling = DefaultValueHandling.Ignore)]
 		public Server Server { get; set; }
@@ -96,7 +96,7 @@ namespace Archon.Rollbar
 			{
 				return new Dictionary<string, string>
 				{
-					{ "name", "Rollbar.NET" },
+					{ "name", "PancakeTeam.Rollbar" },
 					{ "version", NotifierAssemblyVersion },
 				};
 			}

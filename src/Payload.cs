@@ -1,9 +1,9 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace Archon.Rollbar
+namespace PancakeTeam.Rollbar
 {
-	class Payload
+    internal class Payload
 	{
 		public Payload(string accessToken, Data data)
 		{
@@ -12,13 +12,8 @@ namespace Archon.Rollbar
 				throw new ArgumentNullException(nameof(accessToken));
 			}
 
-			if (data == null)
-			{
-				throw new ArgumentNullException(nameof(data));
-			}
-
-			AccessToken = accessToken;
-			Data = data;
+		    AccessToken = accessToken;
+			Data = data ?? throw new ArgumentNullException(nameof(data));
 		}
 
 		public string ToJson()

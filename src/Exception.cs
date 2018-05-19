@@ -1,9 +1,9 @@
 using System;
 using Newtonsoft.Json;
 
-namespace Archon.Rollbar
+namespace PancakeTeam.Rollbar
 {
-	class Exception
+    internal class Exception
 	{
 		public Exception(string @class)
 		{

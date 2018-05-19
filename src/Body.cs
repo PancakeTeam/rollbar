@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
 
-namespace Archon.Rollbar
+namespace PancakeTeam.Rollbar
 {
-	class Body
+    internal class Body
 	{
 		public Body(IEnumerable<System.Exception> exceptions)
 		{
@@ -55,12 +55,7 @@ namespace Archon.Rollbar
 
 		public Body(Message message)
 		{
-			if (message == null)
-			{
-				throw new ArgumentNullException(nameof(message));
-			}
-
-			Message = message;
+		    Message = message ?? throw new ArgumentNullException(nameof(message));
 		}
 
 		public Body(string crashReport)

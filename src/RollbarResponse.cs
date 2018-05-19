@@ -1,8 +1,8 @@
 using Newtonsoft.Json;
 
-namespace Archon.Rollbar
+namespace PancakeTeam.Rollbar
 {
-	class RollbarResponse
+    internal class RollbarResponse
 	{
 		[JsonProperty("err")]
 		public int Error { get; set; }

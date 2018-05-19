@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Archon.Rollbar
+namespace PancakeTeam.Rollbar
 {
 	[JsonConverter(typeof(ArbitraryKeyConverter))]
-	class Message : HasArbitraryKeys
+	internal class Message : HasArbitraryKeys
 	{
 		public Message(string body)
 		{

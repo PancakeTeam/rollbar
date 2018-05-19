@@ -1,14 +1,9 @@
 ﻿using Newtonsoft.Json;
 
-namespace Archon.Rollbar
+namespace PancakeTeam.Rollbar
 {
-	class Person
+	public struct Person
 	{
-		public Person(string id)
-		{
-			Id = id;
-		}
-
 		[JsonProperty("id", Required = Required.Always)]
 		public string Id { get; set; }
 

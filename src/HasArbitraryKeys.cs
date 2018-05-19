@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Archon.Rollbar
+namespace PancakeTeam.Rollbar
 {
 	public abstract class HasArbitraryKeys : IEnumerable<KeyValuePair<string, object>>
 	{

@@ -2,9 +2,9 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace Archon.Rollbar
+namespace PancakeTeam.Rollbar
 {
-	class ArbitraryKeyConverter : JsonConverter<HasArbitraryKeys>
+    internal class ArbitraryKeyConverter : JsonConverter<HasArbitraryKeys>
 	{
 		public override void WriteJson(JsonWriter writer, HasArbitraryKeys value, JsonSerializer serializer)
 		{

@@ -3,7 +3,7 @@
 namespace PancakeTeam.Rollbar
 {
 	[JsonConverter(typeof(ErrorLevelConverter))]
-	internal enum ErrorLevel
+	public enum LogLevel
 	{
 		Critical,
 		Error,

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Reflection;
 using Newtonsoft.Json;
 
-namespace Archon.Rollbar
+namespace PancakeTeam.Rollbar
 {
-	class Frame
+    internal class Frame
 	{
 		public Frame(string filename)
 		{
